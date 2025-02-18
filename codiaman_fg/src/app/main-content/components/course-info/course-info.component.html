@@ -1,0 +1,32 @@
+<p>course-info works!</p>
+<div class="container mt-4">
+    <!-- App Development Course Section -->
+    <section class="row mb-5">
+      <div class="col-md-8">
+        <h2>App Development Course</h2>
+        <p>
+          This course covers the fundamentals of app development, including front-end and back-end technologies, UI/UX design, and deployment strategies. 
+          You'll learn how to build modern web and mobile applications using frameworks like Angular, React, and Flutter.
+        </p>
+        <h4>What You'll Learn:</h4>
+        <ul>
+          <li>HTML, CSS, and JavaScript fundamentals</li>
+          <li>Frontend frameworks like Angular and React</li>
+          <li>Backend development with Node.js and databases</li>
+          <li>Version control using Git and GitHub</li>
+          <li>Deployment and hosting techniques</li>
+        </ul>
+      </div>
+    </section>
+  
+    <!-- Enrolled Courses Section -->
+    <section>
+      <h2>Enrolled Courses</h2>
+      <ul class="list-group">
+        <li *ngFor="let course of courses" class="list-group-item">
+          <a [routerLink]="course.link" class="text-primary">{{ course.name }}</a>
+        </li>
+      </ul>
+    </section>
+  </div>
+  

@@ -1,0 +1,13 @@
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+  i {
+    transition: transform 0.3s;
+  }
+  i:hover {
+    transform: scale(1.2);
+  }
+  
